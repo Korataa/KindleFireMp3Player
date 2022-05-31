@@ -1,0 +1,1 @@
+This is an app I am making for my old 3rd generation kindle. I wanted an mp3 player but the app store doesnt work on my kindle (at least not very well) so I decided to make this and I'm making the app with kotlin.
