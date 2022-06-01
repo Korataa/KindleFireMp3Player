@@ -107,7 +107,7 @@ pushButton.setOnTouchListener { _, event ->
         val projection = arrayOf(
             MediaStore.Audio.Media._ID,
             MediaStore.Audio.Media.DISPLAY_NAME,
-            MediaStore.Audio.Media.DURATION,
+            MediaStore.Audio.Media.DURATION, //this is in milliseconds
             MediaStore.Audio.Media.SIZE
         )
 

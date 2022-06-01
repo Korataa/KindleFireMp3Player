@@ -11,9 +11,9 @@
         android:layout_width="62dp"
         android:layout_height="66dp"
         android:contentDescription="@string/previous"
-        app:icon="@android:drawable/ic_media_previous"
+        android:background="@android:drawable/ic_media_previous"
         app:iconPadding="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/seekBar2"
+        app:layout_constraintBottom_toTopOf="@+id/seekBar"
         app:layout_constraintEnd_toStartOf="@+id/playButton"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -22,14 +22,14 @@
         android:layout_width="62dp"
         android:layout_height="66dp"
         android:contentDescription="@string/next"
-        app:icon="@android:drawable/ic_media_next"
+        android:background="@android:drawable/ic_media_next"
         app:iconPadding="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/seekBar2"
+        app:layout_constraintBottom_toTopOf="@+id/seekBar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/playButton" />
 
     <SeekBar
-        android:id="@+id/seekBar2"
+        android:id="@+id/seekBar"
         android:layout_width="367dp"
         android:layout_height="63dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -41,9 +41,9 @@
         android:layout_width="62dp"
         android:layout_height="66dp"
         android:contentDescription="@string/play"
-        app:icon="@android:drawable/ic_media_play"
+        android:background="@android:drawable/ic_media_pause"
         app:iconPadding="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/seekBar2"
+        app:layout_constraintBottom_toTopOf="@+id/seekBar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
