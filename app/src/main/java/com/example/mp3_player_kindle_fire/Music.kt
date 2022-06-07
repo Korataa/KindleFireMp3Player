@@ -4,15 +4,17 @@ import android.net.Uri
 import android.os.Parcel
 import android.os.Parcelable
 
-class Music(val uri: Uri?,
-                 val name: String?,
-                 val duration: Int,
-                 val size: Int) : Parcelable {
+class Music(    val uri: Uri?,
+                val name: String?,
+                val duration: Int,
+                val size: Int,
+                val artist: String?) : Parcelable {
     constructor(parcel: Parcel) : this(
         parcel.readParcelable(Uri::class.java.classLoader),
         parcel.readString(),
         parcel.readInt(),
-        parcel.readInt()
+        parcel.readInt(),
+        parcel.readString()
     ) {
     }
 
@@ -21,6 +23,7 @@ class Music(val uri: Uri?,
         parcel.writeString(name)
         parcel.writeInt(duration)
         parcel.writeInt(size)
+        parcel.writeString(artist)
     }
 
     override fun describeContents(): Int {

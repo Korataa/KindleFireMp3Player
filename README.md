@@ -1,1 +1,3 @@
 This is an app I am making for my old 3rd generation kindle. I wanted an mp3 player but the app store doesnt work on my kindle (at least not very well) so I decided to make this and I'm making the app with kotlin.
+
+Right now it is SUPER simple and you cant even sort by artist, make playlists, etc. It just searches for all your music files in the common places (Downloads, Music, Maybe Documents?) and spits them out in a long list. The MediaPlayer does run in a service though, so thats nice I guess.

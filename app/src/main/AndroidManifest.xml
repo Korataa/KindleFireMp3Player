@@ -36,6 +36,7 @@
                 <category android:name="android.intent.category.APP_MUSIC" />
             </intent-filter>
         </activity>
+        <service android:name=".MusicService"/>
     </application>
 
 </manifest>
